@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_board_update"
+    android:layout_width="match_parent"
+    android:background="#444444"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rpbMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备未就绪"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <TextView
+                android:clickable="true"
+                android:id="@+id/tv_current_hvt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单车当前硬件版本号："
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_current_hv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <TextView
+                android:clickable="true"
+                android:id="@+id/tv_current_svt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单车当前软件版本号："
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_current_sv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_softtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单车当前软件版本类："
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_current_svtt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_reset_mainboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:text="重置主控板"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/btn_recheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:text="重试"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
